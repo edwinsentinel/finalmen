@@ -1,0 +1,7 @@
+{
+  "name": "finalmen",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
