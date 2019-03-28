@@ -20,6 +20,11 @@ export class AppComponent {
       url: '/contact',
       icon: 'contact'
     },
+    {
+      title: 'Payment Method',
+      url: '/method',
+      icon: 'cash'
+    },
 
   ];
 
