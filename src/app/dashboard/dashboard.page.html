@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>dashboard</ion-title>
+    <ion-title>MOP</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,17 +9,19 @@
     <ion-grid>
         <ion-row>
        <ion-col col-md-4>
-       <ion-card style="background-color:rgb(241, 87, 40) "class="fixed" (click)="profile()" >
-        <ion-icon name="person" style="align-items: center"></ion-icon>
-         <h1 class="h">Profile</h1> 
+       <ion-card style="background-color:rgb(70, 67, 66) "class="fixed" (click)="profile()" >
+         <!-- <ion-icon name="person" style="align-items: center"></ion-icon>  -->
+          <img src="assets/boy.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+         <h2 style="margin-top: 15px"class="h">Profile</h2> 
      </ion-card>
      
      </ion-col>
           <ion-col col-md-4>
-            <ion-card style="background-color: rgb(241, 87, 40)"  class="fixed" (click)="podcasts()">
+            <ion-card style="background-color: rgb(70, 67, 66)"  class="fixed" (click)="podcasts()">
             <!-- <ion-icon name="color-fill" (click)="Fuel()"></ion-icon> -->
-            <ion-icon name="cloud-circle"></ion-icon>
-            <h1 class="h" >Podcasts</h1> 
+            <img src="assets/podcast.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+           
+            <h1 style="margin-top: 15px" class="h" >Podcasts</h1> 
               </ion-card>
           </ion-col>
         </ion-row>
@@ -27,17 +29,19 @@
       <ion-grid>
           <ion-row>
          <ion-col col-md-1>
-         <ion-card style="background-color: rgb(241, 87, 40)" class="fixed" >
-          <ion-icon name="people"></ion-icon>
-          <h1 class="h" > Community</h1> 
+         <ion-card style="background-color: rgb(70, 67, 66)" class="fixed" >
+          <img src="assets/conversation.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+           
+          <h1  style="margin-top: 15px"class="h" > Community</h1> 
          
        </ion-card>
        </ion-col>
        <!-- class="icon" -->
             <ion-col col-md-1>
-              <ion-card style="background-color: rgb(241, 87, 40)"class="fixed" (click)="events()" >
-                <ion-icon name="calendar"></ion-icon>
-                <h1 class="h">Events</h1> 
+              <ion-card style="background-color: rgb(70, 67, 66)"class="fixed" (click)="events()" >
+                <img src="assets/calendar.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+          
+                <h1 style="margin-top: 15px" class="h">Events</h1> 
                
               </ion-card>
             </ion-col>
@@ -47,16 +51,17 @@
         <ion-grid>
           <ion-row>
          <ion-col col-md-2>
-         <ion-card style="background-color: rgb(241, 87, 40)"  class="fixed" (click)="materials()" >
-          <ion-icon name="add"></ion-icon>
-          <h1 class="h" >Materials</h1> 
+         <ion-card style="background-color: rgb(70, 67, 66)"  class="fixed" (click)="materials()" >
+          <img src="assets/folder.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+          
+          <h1 style="margin-top: 15px" class="h" >Materials</h1> 
        </ion-card>
        </ion-col>
             <ion-col col-md-2>
-              <ion-card style="background-color: rgb(241, 87, 40)"class="fixed" >
-                <ion-icon name="information"></ion-icon>
-  
-                <h1 class="h" >Others</h1> 
+              <ion-card style="background-color: rgb(70, 67, 66)"class="fixed" >
+                <img src="assets/settings.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+          
+                <h1  style="margin-top: 15px"class="h" >Others</h1> 
               
               </ion-card>
             </ion-col>

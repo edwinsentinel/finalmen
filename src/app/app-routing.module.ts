@@ -21,7 +21,9 @@ const routes: Routes = [
   { path: 'podcasts', loadChildren: './podcasts/podcasts.module#PodcastsPageModule' },
   { path: 'events', loadChildren: './events/events.module#EventsPageModule' },
   { path: 'materials', loadChildren: './materials/materials.module#MaterialsPageModule' },
-  { path: 'events', loadChildren: './events/events.module#EventsPageModule' }
+  { path: 'events', loadChildren: './events/events.module#EventsPageModule' },
+
+
 ];
 
 @NgModule({
