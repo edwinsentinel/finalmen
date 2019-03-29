@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'events', loadChildren: './events/events.module#EventsPageModule' },
   { path: 'method', loadChildren: './method/method.module#MethodPageModule' },
   { path: 'sacco', loadChildren: './sacco/sacco.module#SaccoPageModule' },
-  { path: 'saccoregistration', loadChildren: './saccoregistration/saccoregistration.module#SaccoregistrationPageModule' },
+  { path: 'memberregistration', loadChildren: './memberregistration/memberregistration.module#MemberregistrationPageModule' },
 
 
 ];

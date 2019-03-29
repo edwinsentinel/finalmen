@@ -12,7 +12,7 @@ export class SaccoPage implements OnInit {
   ngOnInit() {
   }
 
-  saccoregistration() {
-    this.router.navigate(['/saccoregistration']);
+  memberregister() {
+    this.router.navigate(['/memberregistration']);
   }
 }
