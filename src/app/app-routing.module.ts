@@ -23,6 +23,8 @@ const routes: Routes = [
   { path: 'materials', loadChildren: './materials/materials.module#MaterialsPageModule' },
   { path: 'events', loadChildren: './events/events.module#EventsPageModule' },
   { path: 'method', loadChildren: './method/method.module#MethodPageModule' },
+  { path: 'sacco', loadChildren: './sacco/sacco.module#SaccoPageModule' },
+  { path: 'saccoregistration', loadChildren: './saccoregistration/saccoregistration.module#SaccoregistrationPageModule' },
 
 
 ];
