@@ -1,10 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>sacco</ion-title>
+    <ion-title>Sacco Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button   size="small" style="background-color: rgb(197, 165, 134)" (click)=" memberregister()">SignUp</ion-button>
-  <ion-button   size="small"  style="background-color: rgb(197, 165, 134)"  >Login</ion-button>
+ <div text-center>
+   <h3>Login</h3>
+ </div>
+ <div padding>
+    <ion-item>
+  
+        <ion-input placeholder=" Email"></ion-input>
+      </ion-item>
+      <ion-item>
+      
+        <ion-input placeholder="Password "></ion-input>
+      </ion-item>
+ </div>
+ <div text-center>
+ <ion-button   size="small"shape="round" >Login</ion-button>
+</div>
+ <ion-row>
+    <div text-center>
+  If you don't have an account, please <a routerLink='/memberregistration'>
+    register</a> first!
+    </div>
+</ion-row>
 </ion-content>
