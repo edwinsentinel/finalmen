@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'into',
+    redirectTo: 'intoapp',
     pathMatch: 'full'
   },
   {
@@ -26,6 +26,7 @@ const routes: Routes = [
   { path: 'sacco', loadChildren: './sacco/sacco.module#SaccoPageModule' },
   { path: 'memberregistration', loadChildren: './memberregistration/memberregistration.module#MemberregistrationPageModule' },
   { path: 'into', loadChildren: './into/into.module#IntoPageModule' },
+  { path: 'intoapp', loadChildren: './intoapp/intoapp.module#IntoappPageModule' },
 
 
 ];

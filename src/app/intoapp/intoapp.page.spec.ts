@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IntoPage } from './into.page';
+import { IntoappPage } from './intoapp.page';
 
-describe('IntoPage', () => {
-  let component: IntoPage;
-  let fixture: ComponentFixture<IntoPage>;
+describe('IntoappPage', () => {
+  let component: IntoappPage;
+  let fixture: ComponentFixture<IntoappPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IntoPage ],
+      declarations: [ IntoappPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IntoPage);
+    fixture = TestBed.createComponent(IntoappPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
