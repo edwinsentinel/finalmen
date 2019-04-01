@@ -16,7 +16,7 @@ profile() {
   this.router.navigate(['/profile']);
 }
 podcasts() {
-  this.router.navigate(['/podcasts']);
+  this.router.navigate(['/sessions']);
 }
 events() {
   this.router.navigate(['/events']);
