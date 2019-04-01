@@ -1,0 +1,30 @@
+.bg{
+    background: linear-gradient(to bottom, #00A399 0%, #fafafa 400%);
+  }
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+  .bt{
+    // width-50 style="
+    // text-align: right"
+    
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+}
