@@ -5,7 +5,9 @@
 </ion-header>
 
 <ion-content>
- <div text-center>
+
+    <ion-button shape="round" fill="outline" (click)="Goto()" >Go To</ion-button>
+ <!-- <div text-center>
    <h3>Login</h3>
  </div>
  <div padding>
@@ -19,7 +21,7 @@
       </ion-item>
  </div>
  <div text-center>
- <ion-button   size="small"shape="round" >Login</ion-button>
+ <ion-button   size="small"shape="round" (click)>Login</ion-button>
 </div>
  <ion-row>
     <div text-center>
@@ -28,16 +30,16 @@
     </div>
 </ion-row>
  <!-- Skeleton screen -->
- <!-- <div *ngIf="!data">
-  <div class="ion-padding custom-skeleton">
+ <!-- <div *ngIf="!data"> -->
+  <!-- <div class="ion-padding custom-skeleton">
     <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
     <ion-skeleton-text animated></ion-skeleton-text>
     <ion-skeleton-text animated style="width: 88%"></ion-skeleton-text>
     <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
     <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
-  </div>
+  </div> -->
 
-  <ion-list>
+  <!-- <ion-list>
     <ion-list-header>
       <ion-skeleton-text animated style="width: 20%"></ion-skeleton-text>
     </ion-list-header>
@@ -96,6 +98,6 @@
         <ion-skeleton-text animated></ion-skeleton-text>
       </ion-thumbnail>
     </ion-item>
-  </ion-list>
-</div> -->
+  </ion-list> -->
+<!-- </div> --> 
 </ion-content>

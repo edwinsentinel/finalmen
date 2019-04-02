@@ -28,6 +28,10 @@ const routes: Routes = [
 
   { path: 'intoapp', loadChildren: './intoapp/intoapp.module#IntoappPageModule' },
   { path: 'sessions', loadChildren: './sessions/sessions.module#SessionsPageModule' },
+  { path: 'details', loadChildren: './details/details.module#DetailsPageModule' },
+  { path: 'savings', loadChildren: './savings/savings.module#SavingsPageModule' },
+  { path: 'transactions', loadChildren: './transactions/transactions.module#TransactionsPageModule' },
+  { path: 'loan', loadChildren: './loan/loan.module#LoanPageModule' },
 
 
 ];

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+
+
+
 @Component({
   selector: 'app-sacco',
   templateUrl: './sacco.page.html',
@@ -8,7 +11,9 @@ import {Router} from '@angular/router';
 export class SaccoPage implements OnInit {
   data: { 'heading': string; 'Date': string; 'Activity': string; };
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+   ) { }
+   public count = 1;
 
   ngOnInit() {
     setTimeout(() => {
@@ -19,8 +24,24 @@ export class SaccoPage implements OnInit {
       };
     }, 5000);
   }
+   
 
-  memberregister() {
-    this.router.navigate(['/memberregistration']);
+  Goto() {
+    if (this.count > 0) {
+      this.router.navigate(['/details']);
+    } else {
+      this.router.navigate(['/memberregistration']);
+    }
+
+
   }
+// Details() {
+//   this.router.navigate(['/details']);
+// }
+//   memberregister() {
+//     this.router.navigate(['/memberregistration']);
+//   }
+
+
+
 }
