@@ -9,9 +9,13 @@
       <ion-row>
           <ion-col col-md-4>
               <ion-card style="background-color: gray">
+                <ion-button expand="full" (click)="openLocalPdf()">Open Session Pdf</ion-button>
+                <ion-button expand="full" (click)="downloadAndOpenPdf()">Download and open Session PDF</ion-button>
               <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
               <h1 style="background-color: black" >First Meeting Video</h1>
-              <textarea name="comment" id="comment" cols="30" rows="10" ></textarea>
+              <textarea name="comment" id="comment" cols="30" rows="10" expand="frameborder" ></textarea>
+
+
               <ion-button>Post comment</ion-button>
             </ion-card>
           </ion-col>
