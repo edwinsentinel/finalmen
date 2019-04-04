@@ -4,6 +4,8 @@
   ion-card {
     position: relative;
     text-align: center;
+
+    
   }
   .card-title {
     position: absolute;
@@ -27,4 +29,10 @@
     width: 50px;
     text-align: center;
     justify-content: center;
+}
+ion-content{
+  --ion-background-color:rgb(138, 43, 5);
+}
+ion-header ion-toolbar::shadow {
+  --background: rgb(197, 165, 134);
 }

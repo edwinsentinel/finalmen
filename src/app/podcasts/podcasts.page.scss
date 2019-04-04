@@ -11,4 +11,14 @@
     width: 100%;
     height: 100%;
 }
+ion-content{
+    --ion-background-color:rgb(138, 43, 5);
+  }
+  ion-header ion-toolbar::shadow {
+    --background: rgb(197, 165, 134);
+  }
+  .fixed{
+    height: 150px;
+    width: 5px;
+  }
 

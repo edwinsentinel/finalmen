@@ -24,7 +24,7 @@ export class SaccoPage implements OnInit {
       };
     }, 5000);
   }
-   
+
 
   Goto() {
     if (this.count > 0) {

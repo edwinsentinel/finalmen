@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>podcasts</ion-title>
+    <ion-title>Current Session</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,54 +8,55 @@
   <ion-grid>
       <ion-row>
           <ion-col col-md-4>
-              <ion-card style="background-color: gray">
+              <ion-card style="background-color:rgb(189, 164, 144)">
                 
               <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
+              <h1 style="background-color: black" >Session Video</h1>
               <ion-button expand="full" (click)="openLocalPdf()">Open Session Pdf</ion-button>
                 <ion-button expand="full" (click)="downloadAndOpenPdf()">Download and open Session PDF</ion-button>
-              <h1 style="background-color: black" >Session Video</h1>
+              
               <textarea name="comment" id="comment" cols="30" rows="10" width="100px" expand="frameborder" ></textarea>
               <ion-button>Post comment</ion-button>
             </ion-card>
           </ion-col>
-          <ion-col col-md-4>
-                <ion-card style="background-color: gray">
+          <!-- <ion-col col-md-4>
+                <ion-card style="background-color:rgb(189, 164, 144)" >
                 <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
                 <h1 >Second Meeting Video</h1>
               </ion-card>
-            </ion-col>
+            </ion-col> -->
       </ion-row>
-  </ion-grid>
+  </ion-grid> 
   <ion-grid>
       <ion-row>
-          <ion-col col-md-1>
-                <ion-card style="background-color:gray">
+          <!-- <ion-col col-md-1>
+                <ion-card style="background-color:rgb(189, 164, 144)">
                         <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
                         <h1 >Third Meeting Video</h1>
                       </ion-card>
           </ion-col>
           <ion-col col-md-1>
-                <ion-card style="background-color: gray">
+                <ion-card style="background-color:rgb(189, 164, 144)">
                         <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
                         <h1 >Fourth Meeting Video</h1>
                       </ion-card>
-          </ion-col>
+          </ion-col> -->
       </ion-row>
   </ion-grid>
   <ion-grid>
 <ion-row>
-    <ion-col col-md-2>
-            <ion-card style="background-color:gray">
+    <!-- <ion-col col-md-2>
+            <ion-card style="background-color:rgb(189, 164, 144)" >
                     <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
                     <h1 >Fifth Meeting Video</h1>
                   </ion-card>
     </ion-col>
     <ion-col col-md-2>
-            <ion-card style="background-color: gray">
+            <ion-card style="background-color:rgb(189, 164, 144)">
                     <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
                     <h1 >Sixth Meeting Video</h1>
                   </ion-card>
-    </ion-col>
+    </ion-col> -->
 </ion-row>
 
   </ion-grid>
