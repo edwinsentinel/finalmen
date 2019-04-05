@@ -14,4 +14,7 @@ export class SessionsPage implements OnInit {
   podcasts() {
     this.router.navigate(['/podcasts']);
   }
+  othersessions() {
+    this.router.navigate(['/othersessions']);
+  }
 }

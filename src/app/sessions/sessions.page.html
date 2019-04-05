@@ -5,26 +5,43 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid>
-    <ion-row>
-        <ion-col col-md-4>
-            <ion-card style="background-color:rgb(189, 164, 144) "class="fixed"(click)="podcasts()">
+   <ion-row>
+      <ion-col col-md-4>
+            <ion-card >
+                <ion-card-header>
+                  <ion-card-subtitle >Current Session</ion-card-subtitle>
+                  <ion-card-title  >THE OTHER WOMAN presented by Pastor Barnabas Achoki</ion-card-title>
+                </ion-card-header>
+                      <ion-card-content>
+                   This is a session enlightening men how to cope with the other woman in relation to marriage
+                   <img src="assets/woman.jpg"/>
+                    <ion-button expand="full"  color="medium" (click)="podcasts()"  style="align-self: center;justify-self: center;" >View Session</ion-button>
+                     
+                </ion-card-content>
+              </ion-card>
+      </ion-col>
+   </ion-row>
+   <ion-row>
+      <ion-col col-md-1>
+              <ion-card >
+                  <ion-card-header>
+                    <ion-card-subtitle > Other Sessions</ion-card-subtitle>
+                    <ion-card-title  ></ion-card-title>
+                  </ion-card-header>
+                        <ion-card-content>
+                   
+                      <ion-button expand="full"  color="medium" (click)="othersessions()"  style="align-self: center;justify-self: center;" >Open</ion-button>
+                       
+                  </ion-card-content>
+                </ion-card>
+      </ion-col>
+              </ion-row>   
+             
+           
 
-             <ion-row>
-    <div text-center>
-      <h1 style="margin-top: 15px" class="h" >Current Session</h1> 
-    </div>
-</ion-row>
 
-          </ion-card>
-        </ion-col>
-        <ion-col col-md-4>
-              <ion-card style="background-color:rgb(189, 164, 144) "class="fixed" (click)="podcasts()">
-                <h1 style="margin-top: 15px" class="h" >Other Sessions</h1> 
-            </ion-card>
-          </ion-col>
-    </ion-row>
-</ion-grid>
+
+   
 
 </ion-content>
 

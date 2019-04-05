@@ -3,7 +3,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 import { NavController } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
 import { File } from '@ionic-native/File/ngx';
-
+import {Router} from '@angular/router';
 import { FileOpener } from '@ionic-native/file-opener/ngx';
 import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
@@ -15,7 +15,8 @@ import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 export class PodcastsPage implements OnInit {
 vid = 'https://www.youtube.com/embed/wyVM1evRxNw';
   data: { 'heading': string; 'Date': string; 'Activity': string; };
-  constructor(public navctrl: NavController, private dom: DomSanitizer, private platform: Platform, private file: File,
+  constructor(private router: Router, public navctrl: NavController,
+     private dom: DomSanitizer, private platform: Platform, private file: File,
 // tslint:disable-next-line: deprecation
     private ft: FileTransfer, private fileOpener: FileOpener, private document: DocumentViewer, ) {
 
@@ -60,7 +61,9 @@ downloadAndOpenPdf() {
   });
 }
 
-
+addition() {
+  this.router.navigate(['/additionalmaterials']);
+}
 
 
 ngOnInit() {
