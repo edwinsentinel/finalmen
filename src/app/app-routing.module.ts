@@ -33,8 +33,8 @@ const routes: Routes = [
   { path: 'transactions', loadChildren: './transactions/transactions.module#TransactionsPageModule' },
   { path: 'loan', loadChildren: './loan/loan.module#LoanPageModule' },
   { path: 'othersessions', loadChildren: './othersessions/othersessions.module#OthersessionsPageModule' },
-  { path: 'additionalmaterials', loadChildren: './additionalmaterials/additionalmaterials.module#additionalmaterialsPageModule' },
-
+  { path: 'additionalmaterials', loadChildren: './additionalmaterials/additionalmaterials.module#AdditionalmaterialsPageModule' },
+  
 ];
 
 @NgModule({
