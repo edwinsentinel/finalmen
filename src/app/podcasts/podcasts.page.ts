@@ -28,7 +28,7 @@ openLocalPdf() {
 const filePath = this.file.applicationDirectory + 'www/assets';
 if (this.platform.is('android')) {
   const fakeName = Date.now();
-  this.file.copyFile(filePath, 'nat.pdf', this.file.dataDirectory, `${fakeName}.pdf`).then(result => {
+  this.file.copyFile(filePath, 'men.pdf', this.file.dataDirectory, `${fakeName}.pdf`).then(result => {
     this.fileOpener.open(result.nativeURL, 'application/pdf')
       .then(() => console.log('File is opened'))
       .catch(e => console.log('Error opening file', e));
@@ -38,7 +38,7 @@ if (this.platform.is('android')) {
   const options: DocumentViewerOptions = {
     title: 'My PDF'
   };
-  this.document.viewDocument(`${filePath}/nat.pdf`, 'application/pdf', options);
+  this.document.viewDocument(`${filePath}/men.pdf`, 'application/pdf', options);
 }
 }
 // download pdf
