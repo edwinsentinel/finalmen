@@ -20,8 +20,20 @@
                 <!-- <ion-button expand="full" (click)="downloadAndOpenPdf()">Download and open Session PDF</ion-button> -->
               <ion-button  color="medium" expand="full" (click)='addition()'>Other References</ion-button>
               <textarea name="comment" id="comment" cols="30" rows="10" width="100px" expand="frameborder" ></textarea>
-              <ion-button  color="medium" >Post comment</ion-button>
-              <ion-button  color="medium" >View comment</ion-button>
+              <div><ion-button  color="medium" >Post comment</ion-button>
+              <ion-button  color="medium" >View comment</ion-button></div>
+              <ion-col>
+                  <button ion-button icon-start clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <div>12 Likes</div>
+                  </button>
+                </ion-col>
+                <ion-col>
+                  <button ion-button icon-start clear small>
+                    <ion-icon name="text"></ion-icon>
+                    <div>4 Comments</div>
+                  </button>
+                </ion-col>
             </ion-card>
           </ion-col>
           <!-- <ion-col col-md-4>

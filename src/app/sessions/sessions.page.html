@@ -1,6 +1,9 @@
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Men Of Power Sessions</ion-title>
+    <ion-back-button end defaultHref="dashboard"  ></ion-back-button>
+  <ion-toolbar>  
+   <div> <ion-title>MOP</ion-title></div>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -9,14 +12,19 @@
       <ion-col col-md-4>
             <ion-card >
                 <ion-card-header>
-                  <ion-card-subtitle >Current Session</ion-card-subtitle>
-                  <ion-card-title  >THE OTHER WOMAN presented by Pastor Barnabas Achoki</ion-card-title>
+                  <ion-card-subtitle><h2>Current Session</h2></ion-card-subtitle>
+                  <ion-card-title  ><div>Title:Other Woman:</div>
+                    Pastor Barnabus Achoki.
+                  </ion-card-title>
                 </ion-card-header>
-                      <ion-card-content>
+                      <ion-card-content><div>Introduction:</div>
                    This is a session enlightening men how to cope with the other woman in relation to marriage
-                   <img src="assets/woman.jpg"/>
                     <ion-button expand="full"  color="medium" (click)="podcasts()"  style="align-self: center;justify-self: center;" >View Session</ion-button>
-                     
+                    <ion-col align-self-center text-center>
+                        <ion-note>
+                       Last comment 11h ago
+                        </ion-note>
+                      </ion-col>
                 </ion-card-content>
               </ion-card>
       </ion-col>
@@ -29,8 +37,7 @@
                     <ion-card-title  ></ion-card-title>
                   </ion-card-header>
                         <ion-card-content>
-                   
-                      <ion-button expand="full"  color="medium" (click)="othersessions()"  style="align-self: center;justify-self: center;" >Open</ion-button>
+                     <ion-button expand="full"  color="medium" (click)="othersessions()"  style="align-self: center;justify-self: center;" >Open</ion-button>
                        
                   </ion-card-content>
                 </ion-card>
