@@ -1,5 +1,8 @@
 <ion-header>
     <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button end defaultHref="dashboard"  ></ion-back-button>
+          </ion-buttons>
       <ion-title>Additional Materials</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -8,23 +11,23 @@
       <ion-list>
           <ion-item>
             <ion-label>Pokémon Yellow by Garry</ion-label>
-            <ion-button  color="medium" (click)='downloadAndOpenPdf()'>View</ion-button>
+            <button ion-button (click)="openWithInAppBrowser('https://www.techiediaries.com')">View</button>
           </ion-item>
           <ion-item>
             <ion-label>Mega Man X by Eddy</ion-label>
-            <ion-button   color="medium" (click)='downloadAndOpenPdf()'>View</ion-button>
+            <button ion-button (click)="openWithInAppBrowser('https://www.techiediaries.com')">View</button>
           </ion-item>
           <ion-item>
             <ion-label>The Legend of Zelda by Tom</ion-label>
-            <ion-button  color="medium" (click)='downloadAndOpenPdf()'>View</ion-button>
+            <button ion-button (click)="openWithInAppBrowser('https://www.techiediaries.com')">View</button>
           </ion-item>
           <ion-item>
             <ion-label>Pac-Man by Eldad</ion-label>
-            <ion-button   color="medium" (click)='downloadAndOpenPdf()'>View</ion-button>
+            <button ion-button (click)="openWithInAppBrowser('https://www.techiediaries.com')">View</button>
           </ion-item>
           <ion-item>
             <ion-label>Super Mario World  by Victor</ion-label>
-            <ion-button  color="medium" (click)='podcasts()'>View</ion-button>
+            <button ion-button (click)="openWithInAppBrowser('https://www.techiediaries.com')">View</button>
           </ion-item>
         </ion-list>
   

@@ -1,7 +1,10 @@
 
 <ion-header>
-    <ion-back-button end defaultHref="dashboard"  ></ion-back-button>
+  
   <ion-toolbar>  
+      <ion-buttons slot="start">
+          <ion-back-button end defaultHref="dashboard"  ></ion-back-button>
+        </ion-buttons>
    <div> <ion-title>MOP</ion-title></div>
     
   </ion-toolbar>
@@ -19,7 +22,7 @@
                 </ion-card-header>
                       <ion-card-content><div style="color:black">Introduction:</div>
                   <div style="color:black"text-align="justify-self"> This is a session enlightening men how to cope with the other woman in relation to marriage</div>
-                    <ion-button expand="full"  color="medium" (click)="podcasts()"  style="align-self: center;justify-self: center;" >View Session</ion-button>
+                  <div style="margin-top: 60px">  <ion-button expand="full"  color="medium" (click)="podcasts()"  style="align-self: center;justify-self: center;" >View Session</ion-button></div>
                     <ion-col align-self-center text-center>
                         <!-- <ion-note style="text-align: right">
                        Last comment 11h ago
@@ -38,7 +41,7 @@
                   </ion-card-header>
                         <ion-card-content>
                             <div style="color:black"text-align="justify-self"> This is a list of other sessions</div>
-                     <ion-button expand="full"  color="medium" (click)="othersessions()"  style="align-self: center;justify-self: center;" >Open</ion-button>
+                    <div style="margin-top: 60px"> <ion-button expand="full"  color="medium" (click)="othersessions()"  style="align-self: center;justify-self: center;" >Open</ion-button></div>
                        
                   </ion-card-content>
                 </ion-card>

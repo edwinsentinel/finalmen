@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button end defaultHref="dashboard"  ></ion-back-button>
+        </ion-buttons>
     <ion-title>Current Session</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,30 +13,26 @@
           <ion-col col-md-4>
               <ion-card style="background-color:rgb(189, 164, 144)">
                 <ion-card-content>
-                  <ion-header>Introduction:Presented by Mark Anthony</ion-header>
-                  This is a presentation to teach men how to empower themselves.
-
+                  <ion-header style="color: black">Presentation by Pastor Barnabus Achoki</ion-header>
+              
                 </ion-card-content>
               <iframe [src]="sanitize(vid)" frameborder="0" width="500" height="320" allowfullscreen></iframe>
               <h1 style="background-color: black" >Session Video</h1>
-              <ion-button  color="medium" expand="full" (click)="openLocalPdf()">Open Session Pdf</ion-button>
-                <!-- <ion-button expand="full" (click)="downloadAndOpenPdf()">Download and open Session PDF</ion-button> -->
-              <ion-button  color="medium" expand="full" (click)='addition()'>Other References</ion-button>
+             
               <textarea name="comment" id="comment" cols="30" rows="10" width="100px" expand="frameborder" ></textarea>
               <div><ion-button  color="medium" >Post comment</ion-button>
-              <ion-button  color="medium" >View comment</ion-button></div>
-              <ion-col>
-                  <button ion-button icon-start clear small>
-                    <ion-icon name="thumbs-up"></ion-icon>
-                    <div>12 Likes</div>
-                  </button>
-                </ion-col>
                 <ion-col>
                   <button ion-button icon-start clear small>
                     <ion-icon name="text"></ion-icon>
                     <div>4 Comments</div>
                   </button>
                 </ion-col>
+             </div>
+              <ion-button  color="medium" expand="full" (click)="openLocalPdf()">Open Session Pdf</ion-button>
+              <!-- <ion-button expand="full" (click)="downloadAndOpenPdf()">Download and open Session PDF</ion-button> -->
+            <ion-button  color="medium" expand="full" (click)='addition()'>Other References</ion-button>
+              
+                
             </ion-card>
           </ion-col>
           <!-- <ion-col col-md-4>
