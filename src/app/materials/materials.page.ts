@@ -22,7 +22,9 @@ export class MaterialsPage implements OnInit {
   videomedia() {
     this.router.navigate(['/videomedia']);
   }
-
+  blogs() {
+    this.router.navigate(['/blogs']);
+  }
   ngOnInit() {
   }
 

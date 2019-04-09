@@ -37,6 +37,7 @@ const routes: Routes = [
   { path: 'pdfs', loadChildren: './pdfs/pdfs.module#PdfsPageModule' },
   { path: 'audio', loadChildren: './audio/audio.module#AudioPageModule' },
   { path: 'videomedia', loadChildren: './videomedia/videomedia.module#VideomediaPageModule' },
+  { path: 'blogs', loadChildren: './blogs/blogs.module#BlogsPageModule' },
   
 ];
 
