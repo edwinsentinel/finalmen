@@ -16,7 +16,12 @@ export class MaterialsPage implements OnInit {
   pdfs() {
     this.router.navigate(['/pdfs']);
   }
-
+  audio() {
+    this.router.navigate(['/audio']);
+  }
+  videomedia() {
+    this.router.navigate(['/videomedia']);
+  }
 
   ngOnInit() {
   }

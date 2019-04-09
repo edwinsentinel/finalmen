@@ -35,6 +35,8 @@ const routes: Routes = [
   { path: 'othersessions', loadChildren: './othersessions/othersessions.module#OthersessionsPageModule' },
   { path: 'additionalmaterials', loadChildren: './additionalmaterials/additionalmaterials.module#AdditionalmaterialsPageModule' },
   { path: 'pdfs', loadChildren: './pdfs/pdfs.module#PdfsPageModule' },
+  { path: 'audio', loadChildren: './audio/audio.module#AudioPageModule' },
+  { path: 'videomedia', loadChildren: './videomedia/videomedia.module#VideomediaPageModule' },
   
 ];
 
