@@ -34,6 +34,7 @@ const routes: Routes = [
   { path: 'loan', loadChildren: './loan/loan.module#LoanPageModule' },
   { path: 'othersessions', loadChildren: './othersessions/othersessions.module#OthersessionsPageModule' },
   { path: 'additionalmaterials', loadChildren: './additionalmaterials/additionalmaterials.module#AdditionalmaterialsPageModule' },
+  { path: 'pdfs', loadChildren: './pdfs/pdfs.module#PdfsPageModule' },
   
 ];
 

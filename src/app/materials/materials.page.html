@@ -8,7 +8,47 @@
 </ion-header>
 
 <ion-content>
-  <ion-button   size="small" style="background-color: rgb(197, 165, 134)">Pdf& E-books</ion-button>
-  <ion-button   size="small"  style="background-color: rgb(197, 165, 134)"  >Audio Files</ion-button>
-  <ion-button   size="small"  style="background-color: rgb(197, 165, 134)" >Video Files</ion-button>
+  <div>
+    <ion-grid>
+        <ion-row>
+       <ion-col col-md-4>
+       <ion-card style="background-color:rgb(189, 164, 144) "class="fixed" (click)="pdfs()" >
+         <!-- <ion-icon name="person" style="align-items: center"></ion-icon>  -->
+          <img src="assets/ereader.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+         <h2 style="margin-top: 15px"class="h">PDF&E-BOOKS</h2> 
+     </ion-card>
+    
+     </ion-col>
+          <ion-col col-md-4>
+            <ion-card style="background-color: rgb(189, 164, 144)"  class="fixed" (click)="podcasts()">
+            <!-- <ion-icon name="color-fill" (click)="Fuel()"></ion-icon> -->
+            <img src="assets/music-player.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+           
+            <h1 style="margin-top: 15px" class="h" >AUDIO FILES</h1> 
+              </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+          <ion-row>
+         <ion-col col-md-1>
+         <ion-card style="background-color: rgb(189, 164, 144)" class="fixed" >
+          <img src="assets/file.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+           
+          <h1  style="margin-top: 15px"class="h" >VIDEO FILES</h1> 
+         
+       </ion-card>
+       </ion-col>
+       <!-- class="icon" -->
+            <ion-col col-md-1>
+              <ion-card style="background-color: rgb(189, 164, 144)"class="fixed" (click)="events()" >
+                <img src="assets/domain.svg" style="margin-top: 30px;height: 80px;width: 80px;align-self: center;justify-self: center">
+          
+                <h1 style="margin-top: 15px" class="h">WEBSITES&BLOGS</h1> 
+               
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </div>
 </ion-content>
