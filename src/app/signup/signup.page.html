@@ -1,0 +1,28 @@
+
+<ion-content>
+  <div text-center>
+      <h3>Registration</h3>
+    </div>
+<ion-item>
+
+  <ion-input placeholder=" Name "  [(ngModel)]="Names" ></ion-input>
+</ion-item>
+<ion-item>
+
+  <ion-input type="number" placeholder="Telephone" [(ngModel)]="phone"></ion-input>
+</ion-item >
+<ion-item>
+
+  <ion-input   type="email"  placeholder="Email" [(ngModel)]="Email" ></ion-input>
+</ion-item>
+<ion-item>
+
+  <ion-input type="password" placeholder="Password" [(ngModel)]="Password"   ></ion-input>
+</ion-item>
+<div text-center>
+<ion-button  shape="round" color="primary" fill="outline" (click)="Ins()" ><ion-icon name="key"></ion-icon> Sign in</ion-button>
+
+</div>
+</ion-content>
+
+

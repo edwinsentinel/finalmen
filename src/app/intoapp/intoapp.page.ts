@@ -11,8 +11,13 @@ export class IntoappPage implements OnInit {
   constructor(private router: Router) { }
   dashboard() {
     // this.navCtrl.push(DashboardPage)
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/signup']);
   }
+
+dsh() {
+this.router.navigate(['/signup'])
+
+}
   ngOnInit() {
   }
 

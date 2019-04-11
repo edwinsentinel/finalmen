@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'intoapp',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
@@ -38,6 +38,9 @@ const routes: Routes = [
   { path: 'audio', loadChildren: './audio/audio.module#AudioPageModule' },
   { path: 'videomedia', loadChildren: './videomedia/videomedia.module#VideomediaPageModule' },
   { path: 'blogs', loadChildren: './blogs/blogs.module#BlogsPageModule' },
+  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
+ 
+  { path: 'def', loadChildren: './def/def.module#DefPageModule' },
   
 ];
 
